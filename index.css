@@ -1,0 +1,30 @@
+:root {
+  color-scheme: dark;
+}
+
+/* Minimal animation helpers to match class names used in components */
+.animate-in {
+  animation: fadeIn 700ms ease both;
+}
+
+.fade-in {
+  animation-name: fadeIn;
+}
+
+.slide-in-from-bottom-4 {
+  animation-name: slideInFromBottom4;
+}
+
+.duration-700 {
+  animation-duration: 700ms;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInFromBottom4 {
+  from { opacity: 0; transform: translateY(1rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
